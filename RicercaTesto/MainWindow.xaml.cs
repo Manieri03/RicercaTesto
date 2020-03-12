@@ -79,7 +79,7 @@ namespace RicercaTesto
 
                             while (j < testo.Length || j < testo.IndexOf(' '))
                             {
-                                j++;
+                                j++ ;
 
                             }
 
@@ -95,6 +95,9 @@ namespace RicercaTesto
                     {
                         lblcerca.Content = "La stringa da lei richiesta non è presente nel testo";
                     }
+
+                    //NON COMPLETATO
+                    
                 }
             }
         }
