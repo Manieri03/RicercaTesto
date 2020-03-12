@@ -1,0 +1,58 @@
+﻿<Window x:Class="RicercaTesto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RicercaTesto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="41*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF99FF00" Offset="0"/>
+                <GradientStop Color="#FFFFE500" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="35" Margin="80,72,0,0" Stroke="Black" VerticalAlignment="Top" Width="142" Opacity="0.6"/>
+
+        <Image Margin="218,42,225.6,43" Source="alfabeto.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-22.531"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="35" Margin="80,32.6,0,0" Stroke="Black" VerticalAlignment="Top" Width="301" Opacity="0.6" Grid.Row="1"/>
+
+        <Image Margin="640,58,69.6,31.6" Source="omino-lente.png" Stretch="Fill"/>
+
+        <TextBox x:Name="txttesto" HorizontalAlignment="Left" Height="51" Margin="80,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275"/>
+        <TextBox x:Name="txtstringa" HorizontalAlignment="Left" Height="38" Margin="80,73.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Grid.Row="1"/>
+        <Label Content="Inserire qui il testo" HorizontalAlignment="Left" Margin="80,72,0,0" VerticalAlignment="Top" FontFamily="Segoe Print" FontSize="14"/>
+        <Label Content="Inserire qui le lettere/parole da ricercare" HorizontalAlignment="Left" Margin="80,32.6,0,0" VerticalAlignment="Top" FontFamily="Segoe Print" FontSize="14" Grid.Row="1"/>
+        <Label Name="lblcerca" Content="" HorizontalAlignment="Left" Height="79" Margin="444,73.6,0,0" VerticalAlignment="Top" Width="312" Grid.Row="1" Background="White"/>
+        <Image Margin="554,167,160.6,199" Source="freccia.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-52.902"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="TOOL DI RICERCA DEL TESTO" HorizontalAlignment="Left" Height="40" Margin="211,10,0,0" VerticalAlignment="Top" Width="373" FontFamily="Segoe Print" FontSize="22"/>
+        <Button Content="Cerca" HorizontalAlignment="Left" Margin="534,104,0,0" VerticalAlignment="Top" Width="127" Click="Cerca_Click" Height="61" FontFamily="Segoe Print" FontSize="20" Background="#FFFFDC71"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="10" Margin="56,45.4,0,0" Stroke="Black" VerticalAlignment="Top" Width="10" Grid.Row="1"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="10" Margin="56,85,0,0" Stroke="Black" VerticalAlignment="Top" Width="10"/>
+
+    </Grid>
+</Window>
